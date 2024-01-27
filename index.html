@@ -7,6 +7,8 @@
   <title>Encriptador de Textos</title>
   <!--  <link rel="stylesheet" href="css/reset.css">-->
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+  <script defer src="js/app2.js"></script>
 </head>
 
 <body>
@@ -18,23 +20,21 @@
   </header>
 
   <main class="principal">
-    <textarea name="textoaencriptar" id="textoEncriptar" cols="30" rows="10">
-    Ingresa el texto que desees encriptar o desencriptar.
-    </textarea>
+    <textarea name="textoaencriptar" id="textoEncriptar" cols="30" rows="10" onfocus="ocultarimagen()"></textarea>
     <img src="img/logo.png" alt="Logo del creador" class="ingresatexto">
 
-    <label for="textoEncriptar" class="advertencia">&#9888; Recuerda no inlcuir texto con acéntos o carácteres especiales &#9997;</label>
-    <input type="button" value="Encriptar"class="btn" id="encriptar">
-    <input type="button" value="Desencriptar" class="btn" id="desencriptar">
+    <label for="textoEncriptar" class="advertencia">&#9888;Recuerda no incluir texto con acéntos o carácteres especiales &#9997;</label>
+    <input type="button" value="Encriptar" class="btn" id="encriptar" onclick="encriptar()">
+    <input type="button" value="Desencriptar" class="btn" id="desencriptar" onclick="desencriptar()">
   </main>
 
   <aside class="barra__derecha">
     <textarea name="textoDesencriptado" id="textoDesencriptado" cols="28" rows="10"></textarea>
-    <input type="button" value="Copiar texto" class="btn" id="copiarTexto">
+    <input type="button" value="Copiar texto" class="btn" id="copiarTexto" onclick="copiarTexto()">
   </aside>
 </div>
 <footer class="pie__pagina">
-  <h4>Alberto Carmona</h4>
+  <h4>Desarrolado por: Alberto Carmona</h4>
   <p>&copy; Copyright 2024</p>
   <img src="img/logo.png" alt="Logo del creador" class="imagen__logo">
   <h3>Encriptador de Textos</h3>

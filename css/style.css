@@ -79,6 +79,7 @@ body {
   box-shadow: 0 0 6px 2px dodgerblue;
   outline-color: darkred;
   padding: 10px;
+  font-family: 'Concert One', sans-serif;
 }
 
 #textoEncriptar {
@@ -91,8 +92,9 @@ body {
   box-shadow: 0 0 6px 2px deepskyblue;
   outline-color: darkred;
   padding: 10px;
-
+  font-family: 'Concert One', sans-serif;
 }
+
 .ingresatexto{
   position: absolute;
   top:80px;
@@ -106,7 +108,7 @@ body {
   border: 2px solid darkcyan;
   background-color: transparent;
   text-transform: uppercase;
-  font-weight: 500px;
+  font-weight: 500;
   font-family: 'Concert One', sans-serif;
   padding: 10px 20px;
   border-radius: 5px;
@@ -123,4 +125,57 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (max-width: 780px){
+  .contenedor{
+    width: 750px;
+    text-align: center;
+  }
+  .cabecero{
+    height: 180px;
+  }
+  .barra__derecha{
+    clear: left;
+    width: 100%;
+  }
+  .ingresatexto{
+    display: none;
+  }
+  .principal{
+    width: 100%;
+  }
+  .advertencia{
+    font-size: 0.8rem;
+    display: block;
+  }
+  .btn{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 480px){
+  .contenedor{
+    width: 360px;
+    text-align: center;
+  }
+  .cabecero{
+    height: 180px;
+  }
+  .barra__derecha{
+    clear: left;
+    width: 100%;
+  }
+  .ingresatexto{
+    display: none;
+  }
+  .principal{
+    width: 100%;
+  }
+  .advertencia{
+    font-size: 0.8rem;
+    display: block;
+  }
+  .btn{
+    font-size: 0.7rem;
+  }
+}
+
 
