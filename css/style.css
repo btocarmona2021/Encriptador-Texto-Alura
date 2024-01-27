@@ -151,7 +151,7 @@ body {
     font-size: 0.7rem;
   }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 390px){
   .contenedor{
     width: 360px;
     text-align: center;
