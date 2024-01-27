@@ -51,7 +51,6 @@ function encriptarTexto(texto) {
         case"ó":
         case"o": {
           nuevaFrase += 'ober';
-
           break;
         }
         case "ú":
