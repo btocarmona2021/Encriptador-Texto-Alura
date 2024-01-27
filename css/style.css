@@ -132,6 +132,7 @@ body {
     text-align: center;
   }
   .cabecero{
+    width: 100%;
     height: 180px;
   }
   .barra__derecha{
@@ -158,6 +159,7 @@ body {
     text-align: center;
   }
   .cabecero{
+    width: 100%;
     height: 180px;
   }
   .barra__derecha{
