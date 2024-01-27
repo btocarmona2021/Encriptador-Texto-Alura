@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Concert One', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   background-color: #F0F0F0;
 }
 
