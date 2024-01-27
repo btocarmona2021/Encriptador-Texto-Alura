@@ -114,6 +114,7 @@ body {
   border-radius: 5px;
   margin: 10px 15px;
   cursor: pointer;
+  text-align: center;
 }
 
 .pie__pagina {
