@@ -126,9 +126,9 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-@media screen and (max-width: 780px){
-  .contenedor{
-    width: 750px;
+@media screen and (min-width: 720px) and (max-width: 768px){
+.contenedor{
+    width: 700px;
     text-align: center;
   }
   .cabecero{
