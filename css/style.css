@@ -64,11 +64,17 @@ body {
 }
 
 .barra__derecha {
+  position: relative;
   width: 50%;
   height: 400px;
   float: left;
   text-align: center;
   padding: 20px;
+}
+#imagenbusqueda{
+  position: absolute;
+  top: 37px;
+  left: 90px;
 }
 
 #textoDesencriptado {

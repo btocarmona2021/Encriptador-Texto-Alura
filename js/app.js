@@ -2,10 +2,21 @@
 const textoAEncriptar = document.querySelector('#textoEncriptar');
 
 const textoADesencriptar = document.querySelector('#textoDesencriptado');
-
+const asideDerecho = document.querySelector('.barra__derecha');
 function encriptar() {
   let textoSinEncriptar = textoAEncriptar.value;
   textoADesencriptar.value = encriptarTexto(textoSinEncriptar);
+  if (textoADesencriptar.value === 'No hay texto a Encriptar'){
+    console.log('sadasd')
+    let imagen = document.createElement('img');
+    imagen.src='./img/Muneco.png';
+    imagen.alt='Muñeco';
+    imagen.id='imagenbusqueda';
+    asideDerecho.appendChild(imagen);
+  }else{
+    const imagen = document.querySelector('#imagenbusqueda');
+    asideDerecho.removeChild(imagen);
+  }
 }
 
 function desencriptar() {
@@ -16,7 +27,7 @@ function desencriptar() {
 function copiarTexto() {
   textoADesencriptar.select();
   document.execCommand('copy');
-
+  alert('El texto ha sido copiado y pegado correctamente ,listo para encriptar o desencriptar')
   navigator.clipboard.readText().then(texto => {
     textoAEncriptar.focus();
     textoAEncriptar.value = texto;
