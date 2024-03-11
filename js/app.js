@@ -3,17 +3,17 @@ const textoAEncriptar = document.querySelector('#textoEncriptar');
 
 const textoADesencriptar = document.querySelector('#textoDesencriptado');
 const asideDerecho = document.querySelector('.barra__derecha');
+
 function encriptar() {
   let textoSinEncriptar = textoAEncriptar.value;
   textoADesencriptar.value = encriptarTexto(textoSinEncriptar);
-  if (textoADesencriptar.value === 'No hay texto a Encriptar'){
-    console.log('sadasd')
+  if (textoADesencriptar.value === 'No hay texto a Encriptar') {
     let imagen = document.createElement('img');
-    imagen.src='./img/Muneco.png';
-    imagen.alt='Muñeco';
-    imagen.id='imagenbusqueda';
+    imagen.src = './img/Muneco.png';
+    imagen.alt = 'Muñeco';
+    imagen.id = 'imagenbusqueda';
     asideDerecho.appendChild(imagen);
-  }else{
+  } else {
     const imagen = document.querySelector('#imagenbusqueda');
     asideDerecho.removeChild(imagen);
   }
@@ -32,14 +32,12 @@ function copiarTexto() {
     textoAEncriptar.focus();
     textoAEncriptar.value = texto;
   })
-
 }
 
 function ocultarimagen() {
   const ocultaimagen = document.querySelector('.ingresatexto');
   ocultaimagen.style.display = "none";
 }
-
 
 function encriptarTexto(texto) {
   let nuevaFrase = "";
@@ -81,38 +79,40 @@ function encriptarTexto(texto) {
     return 'No hay texto a Encriptar';
   }
 }
+
 //PRIMERA FORMA DE OBTENER LA DESENCRIPTACION
 function desencriptarTexto(texto) {
-const criterio1= /ai/gi;
-const criterio2= /enter/gi;
-const criterio3= /imes/gi;
-const criterio4= /ober/gi;
-const criterio5= /ufat/gi;
-const palabras = texto.split();
+  const criterio1 = /ai/gi;
+  const criterio2 = /enter/gi;
+  const criterio3 = /imes/gi;
+  const criterio4 = /ober/gi;
+  const criterio5 = /ufat/gi;
+  const palabras = texto.split();
 
-let textoDesencriptado="";
+  let textoDesencriptado = "";
   for (let i = 0; i < palabras.length; i++) {
-    let palabraADesencriptar= palabras[i];
-    if (criterio1.test(palabraADesencriptar)){
-      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio1,"a"))
+    let palabraADesencriptar = palabras[i];
+    if (criterio1.test(palabraADesencriptar)) {
+      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio1, "a"))
     }
-    if (criterio2.test(palabraADesencriptar)){
-      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio2,"e"))
+    if (criterio2.test(palabraADesencriptar)) {
+      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio2, "e"))
     }
-    if (criterio3.test(palabraADesencriptar)){
-      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio3,"i"))
+    if (criterio3.test(palabraADesencriptar)) {
+      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio3, "i"))
     }
-    if (criterio4.test(palabraADesencriptar)){
-      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio4,"o"))
+    if (criterio4.test(palabraADesencriptar)) {
+      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio4, "o"))
     }
-    if (criterio5.test(palabraADesencriptar)){
-      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio5,"u"))
+    if (criterio5.test(palabraADesencriptar)) {
+      palabraADesencriptar = " ".concat(palabraADesencriptar.replace(criterio5, "u"))
     }
-    textoDesencriptado+=palabraADesencriptar;
+    textoDesencriptado += palabraADesencriptar;
   }
   console.log(textoDesencriptado);
   return textoDesencriptado;
 }
+
 //SEGUNDA FORMA DE OBTENER LO MISMO
 /*function desencriptarTexto(texto) {
   let nuevaFraseDesencriptada = "";
@@ -164,5 +164,4 @@ let textoDesencriptado="";
 
     return 'No hay texto a Desencriptar';
   }
-
 }*/
