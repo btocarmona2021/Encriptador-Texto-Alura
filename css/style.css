@@ -17,9 +17,12 @@ body {
 }
 
 .cabecero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
   width: 100%;
   height: 140px;
-  background: linear-gradient(#d2fafa, darkcyan);
+  background: linear-gradient(#000913, darkcyan);
   padding: 10px 20px;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 8px;
@@ -32,7 +35,10 @@ body {
   object-fit: contain;
   filter: drop-shadow(3px 3px 20px white);
 }
-
+.logo__alura{
+  width: 100px;
+  height: 50px;
+}
 .titulo {
   color: #FFFFFF;
   font-size: 26px;
@@ -131,7 +137,7 @@ body {
   clear: left;
   width: 100%;
   height: 280px;
-  background: linear-gradient(darkcyan, #000000);
+  background: linear-gradient(darkcyan, #000913);
   padding: 20px;
   text-align: center;
   color: #FFFFFF;
