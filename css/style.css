@@ -38,6 +38,10 @@ body {
 .logo__alura{
   width: 100px;
   height: 50px;
+  transition: 0.5s;
+}
+.logo__alura:hover{
+  transform: rotate(720deg) scale(1.3);
 }
 .titulo {
   color: #FFFFFF;
@@ -47,8 +51,11 @@ body {
   vertical-align: middle;
   padding: 0 0 0 20px;
   text-shadow: 1px 1px 3px black;
+  transition: 0.3s;
 }
-
+.titulo:hover{
+  transform: translateY(50px) scale(1.5);
+}
 .principal {
   position: relative;
   padding: 20px;
@@ -117,8 +124,11 @@ body {
   width: 180px;
   height: 180px;
   object-fit: contain;
+  transition: 0.5s;
 }
-
+.ingresatexto:hover{
+  transform: scale(1.3);
+}
 .btn {
   width: 30%;
   border: 2px solid darkcyan;
@@ -210,5 +220,11 @@ body {
     font-size: 0.7rem;
   }
 }
-
+.oracle{
+  text-shadow: 2px 2px 1px black,2px 2px 4px white;
+  transition: all 0.5s;
+}
+.oracle:hover{
+  transform: scale(1.2) translateY(10px);
+}
 
